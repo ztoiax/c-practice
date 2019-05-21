@@ -6,18 +6,19 @@
 #include "tlpi_hdr.h"
 #include <time.h>
 
-int main(int argc, char *argv[]){
+int main(void)
+{
   char s[1000];
   char *c;
   time_t i;
   struct tm *tm;
 
-  i = time(NULL);
+  i = time(null);
   c = ctime(&i);
   puts(c);
 
   tm = localtime(&i);
-  if(tm == NULL)
+  if(tm == null)
     printf("error");
   strftime(s,1000,"%c",tm);
   puts(s);

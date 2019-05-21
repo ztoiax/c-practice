@@ -1,6 +1,7 @@
+#include "error_functions.c"
 #include <fcntl.h>
-#include "tlpi_hdr.h"
 
-int main(int argc, char *argv[]){
+int main(int argc, char *argv[], char **envp)
+{
   return 0;
 }
